@@ -10,7 +10,8 @@ import { useEffect } from "react";
 import SearchFilters from "@/components/SearchFilters";
 import Property from "@/components/property";
 import noresult from "../assets/noresult.svg";
-import { baseUrl, fetchAPI } from "./utils/fetchAPI";
+import { baseUrl } from "@/utils/fetchAPI";
+import fetchAPI from "@/utils/fetchAPI";
 
 const Search = ({ properties }) => {
   const [searchFilters, setSearchFilters] = useState(false);
